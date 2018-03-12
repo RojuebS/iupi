@@ -73,7 +73,7 @@ main {
       margin-top: 50px;
 
       li {
-        flex-basis: 50%;
+        flex-basis: 48%;
         display: flex;
         align-items: center;
         justify-items: center;
@@ -84,6 +84,7 @@ main {
           text-decoration: none;
           color: #9f9f9f;
           margin-left: 10px;
+          display: block;
         }
       }
     }

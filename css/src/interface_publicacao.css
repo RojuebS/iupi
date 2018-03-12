@@ -48,7 +48,7 @@ main nav#dashboard ul {
   justify-items: center;
   margin-top: 50px; }
   main nav#dashboard ul li {
-    flex-basis: 50%;
+    flex-basis: 48%;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -57,6 +57,7 @@ main nav#dashboard ul {
     main nav#dashboard ul li a {
       text-decoration: none;
       color: #9f9f9f;
-      margin-left: 10px; }
+      margin-left: 10px;
+      display: block; }
 
 /*# sourceMappingURL=interface_publicacao.css.map */
