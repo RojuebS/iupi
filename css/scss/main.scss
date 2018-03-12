@@ -46,3 +46,47 @@ header {
     }
   }
 }
+
+main {
+  nav#system {
+    ul {
+
+      li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 10px;
+
+        a {
+          color: #17b3ce;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  nav#dashboard {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-items: center;
+      margin-top: 50px;
+
+      li {
+        flex-basis: 48%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-top: 20px;
+        height: 100px;
+
+        a {
+          text-decoration: none;
+          color: #9f9f9f;
+          margin-left: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+}
