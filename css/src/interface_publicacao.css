@@ -3,13 +3,60 @@
   margin: 0;
   outline: none; }
 
+.center {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative; }
+
 header {
   width: 100%;
   height: 100px;
-  background: #5f5f5f; }
+  background: #5f5f5f;
+  position: relative; }
   header h2 {
     line-height: 100px;
     color: #ffffff;
     text-align: center; }
+  header #perfil {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    width: 150px;
+    overflow: hidden; }
+    header #perfil figure {
+      float: left; }
+      header #perfil figure img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%; }
+    header #perfil .name {
+      float: left;
+      margin: 8px 0 0 10px;
+      color: #ffffff; }
+
+main nav#system ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px; }
+  main nav#system ul li a {
+    color: #17b3ce;
+    text-decoration: none; }
+main nav#dashboard ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  margin-top: 50px; }
+  main nav#dashboard ul li {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+    height: 100px; }
+    main nav#dashboard ul li a {
+      text-decoration: none;
+      color: #9f9f9f;
+      margin-left: 10px; }
 
 /*# sourceMappingURL=interface_publicacao.css.map */
