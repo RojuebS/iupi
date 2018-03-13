@@ -156,6 +156,20 @@ form {
   }
 }
 
+.clear {
+    clear: both;
+}
+
+.new-product {
+    float: right;
+    padding: 10px 30px;
+    border: 1px solid #9f9f9f;
+    margin: 30px 0 0 0;
+    background: #9f9f9f;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
 button {
   padding: 10px 30px;
   color: #5f5f5f;
