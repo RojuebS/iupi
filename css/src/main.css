@@ -22,7 +22,8 @@ header {
   header h2 {
     line-height: 100px;
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
   header #perfil {
     position: absolute;
     top: 25px;
