@@ -139,8 +139,8 @@ form {
       width: 96%;
       height: 120px;
       border-radius: 6px;
-      color: #ffffff;
-      padding: 0 10px;
+      color: #5f5f5f;
+      padding: 10px;
       border: 1px solid #5f5f5f; }
     form .form-item input[type="text"] {
       width: 96%;
@@ -187,6 +187,8 @@ form {
         border-radius: 4px; }
         form .form-item.actions .settings div:last-child {
           margin-left: 20px; }
+    form .form-item.error input, form .form-item.error textarea {
+      border: 1px solid red; }
 
 p.title {
   width: 98%;

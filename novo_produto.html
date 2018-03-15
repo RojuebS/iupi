@@ -24,10 +24,10 @@
     <div class="center">
         <p class="title">INFORMAÇÕES DO PRODUTO</p>
 
-        <form>
-            <div class="form-item">
+        <form class="valida_form" action="/" method="post">
+            <div class="form-item validar">
                 <label for="titulo">Título *</label>
-                <input type="text" id="titulo" name="">
+                <input type="text" id="titulo" value="" name="">
             </div>
 
             <div class="form-item">
@@ -35,19 +35,19 @@
                 <textarea id="sinopse" name=""></textarea>
             </div>
 
-            <div class="form-item medium">
+            <div class="form-item medium validar">
                 <label for="ano_producao">Ano de produção *</label>
-                <input type="text" name="" placeholder="Ano de produção" id="ano_producao">
+                <input type="text" name="" value="" placeholder="Ano de produção" id="ano_producao">
             </div>
 
-            <div class="form-item medium action-right">
+            <div class="form-item medium action-right validar">
                 <label for="temporada">Temporada *</label>
-                <input type="text" name="" id="temporada" placeholder="temporada">
+                <input type="text" name="" value="" id="temporada" placeholder="temporada">
             </div>
 
-            <div class="form-item">
+            <div class="form-item validar">
                 <label for="estudio">Estúdio *</label>
-                <input type="text" name="" placeholder="Estúdio" id="estudio">
+                <input type="text" name="" value="" placeholder="Estúdio" id="estudio">
             </div>
 
             <div class="clear"></div>
@@ -66,15 +66,15 @@
                 <li><div class="label white">ER</div></li>
             </ul>
 
-            <div class="form-item">
+            <div class="form-item validar">
                 <label for="genero">Gênero *</label>
-                <input type="text" name="" placeholder="temporada" id="genero">
+                <input type="text" name="" value="" placeholder="temporada" id="genero">
             </div>
 
-            <div class="form-item actions">
+            <div class="form-item actions validar">
                 <div class="block-left">
                     <label for="ator">Ator *</label>
-                    <input type="text" name="" placeholder="Ator" id="ator">
+                    <input type="text" name="" value="" placeholder="Ator" id="ator">
                 </div>
                 <div class="settings">
                     <div class="add"> + </div>
@@ -82,10 +82,10 @@
                 </div>
             </div>
 
-            <div class="form-item actions">
+            <div class="form-item actions validar">
                 <div class="block-left">
                     <label for="ator">Diretor *</label>
-                    <input type="text" name="" placeholder="Diretor" id="diretor">
+                    <input type="text" name="" value="" placeholder="Diretor" id="diretor">
                 </div>
                 <div class="settings">
                     <div class="add"> + </div>
@@ -98,7 +98,7 @@
             <div class="form-item actions">
                 <div class="block-left">
                     <label for="ator">Autor</label>
-                    <input type="text" name="" placeholder="Autor" id="Autor">
+                    <input type="text" name="" value="" placeholder="Autor" id="Autor">
                 </div>
                 <div class="settings">
                     <div class="add"> + </div>
@@ -108,14 +108,14 @@
 
             <p class="title">INFORMAÇÕES COMERCIAIS</p>
 
-            <div class="form-item medium">
+            <div class="form-item medium validar">
                 <label for="preco_sugerido">Preço sugerido *</label>
-                <input type="text" name="" id="preco_sugerido">
+                <input type="text" name="" value="" id="preco_sugerido">
             </div>
 
             <div class="form-item medium action-right">
                 <label for="novo_billing">Novo Billing ID</label>
-                <input type="text" name="" id="novo_billing">
+                <input type="text" name="" value="" id="novo_billing">
             </div>
 
             <div class="clear"></div>
@@ -131,5 +131,6 @@
 
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
