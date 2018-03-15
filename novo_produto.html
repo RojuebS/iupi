@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" media="all" href="css/src/main.css" />
     <title>Interface de publicação</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,400,600,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -21,13 +22,109 @@
 
 <main>
     <div class="center">
-        <h2 class="title">INFORMAÇÕES DO PRODUTO</h2>
+        <p class="title">INFORMAÇÕES DO PRODUTO</p>
 
         <form>
             <div class="form-item">
-                <label for="titulo"></label>
+                <label for="titulo">Título *</label>
                 <input type="text" id="titulo" name="">
             </div>
+
+            <div class="form-item">
+                <label for="sinopse">Sinopse *</label>
+                <textarea id="sinopse" name=""></textarea>
+            </div>
+
+            <div class="form-item medium">
+                <label for="ano_producao">Ano de produção *</label>
+                <input type="text" name="" placeholder="Ano de produção" id="ano_producao">
+            </div>
+
+            <div class="form-item medium action-right">
+                <label for="temporada">Temporada *</label>
+                <input type="text" name="" id="temporada" placeholder="temporada">
+            </div>
+
+            <div class="form-item">
+                <label for="estudio">Estúdio *</label>
+                <input type="text" name="" placeholder="Estúdio" id="estudio">
+            </div>
+
+            <div class="clear"></div>
+
+            <p class="title">Elenco</p>
+
+            <p class="censura">Classificação(Censura)</p>
+
+            <ul class="classificacao">
+                <li class="active"><div class="label green">L</div></li>
+                <li><div class="label blue">10</div></li>
+                <li><div class="label yellow">12</div></li>
+                <li><div class="label orange">14</div></li>
+                <li><div class="label red">16</div></li>
+                <li><div class="label black">18</div></li>
+                <li><div class="label white">ER</div></li>
+            </ul>
+
+            <div class="form-item">
+                <label for="genero">Gênero *</label>
+                <input type="text" name="" placeholder="temporada" id="genero">
+            </div>
+
+            <div class="form-item actions">
+                <div class="block-left">
+                    <label for="ator">Ator *</label>
+                    <input type="text" name="" placeholder="Ator" id="ator">
+                </div>
+                <div class="settings">
+                    <div class="add"> + </div>
+                    <div class="subtraction"> - </div>
+                </div>
+            </div>
+
+            <div class="form-item actions">
+                <div class="block-left">
+                    <label for="ator">Diretor *</label>
+                    <input type="text" name="" placeholder="Diretor" id="diretor">
+                </div>
+                <div class="settings">
+                    <div class="add"> + </div>
+                    <div class="subtraction"> - </div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="form-item actions">
+                <div class="block-left">
+                    <label for="ator">Autor</label>
+                    <input type="text" name="" placeholder="Autor" id="Autor">
+                </div>
+                <div class="settings">
+                    <div class="add"> + </div>
+                    <div class="subtraction"> - </div>
+                </div>
+            </div>
+
+            <p class="title">INFORMAÇÕES COMERCIAIS</p>
+
+            <div class="form-item medium">
+                <label for="preco_sugerido">Preço sugerido *</label>
+                <input type="text" name="" id="preco_sugerido">
+            </div>
+
+            <div class="form-item medium action-right">
+                <label for="novo_billing">Novo Billing ID</label>
+                <input type="text" name="" id="novo_billing">
+            </div>
+
+            <div class="clear"></div>
+
+            <p class="info-campos">
+                * Campos Obrigatórios
+            </p>
+
+            <button class="cadastrar">Cadastrar</button>
         </form>
     </div>
 </main>

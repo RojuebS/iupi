@@ -3,6 +3,12 @@
   margin: 0;
   outline: none; }
 
+body {
+  font-family: "Open Sans"; }
+
+.clear {
+  clear: both; }
+
 .center {
   width: 1280px;
   margin: 0 auto;
@@ -77,29 +83,117 @@ main {
 
 form {
   margin-top: 20px; }
+  form .info-campos {
+    padding: 30px 0;
+    font-size: 14px; }
+  form .classificacao {
+    display: block;
+    overflow: hidden;
+    margin: 30px 0; }
+    form .classificacao li {
+      display: inline-block;
+      list-style: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 6px; }
+      form .classificacao li.active {
+        border: 2px solid #5f5f5f; }
+      form .classificacao li .label {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background: red;
+        color: #ffffff;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 6px;
+        font-weight: bold; }
+        form .classificacao li .label.green {
+          background: #00ad51; }
+        form .classificacao li .label.blue {
+          background: #00ccff; }
+        form .classificacao li .label.yellow {
+          background: #ffcc00; }
+        form .classificacao li .label.orange {
+          background: #ff6600; }
+        form .classificacao li .label.red {
+          background: #fd0100; }
+        form .classificacao li .label.black {
+          background: #000000; }
+        form .classificacao li .label.white {
+          background: #ffffff;
+          color: #000000;
+          border: 1px solid #000000; }
   form .form-item {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 20px;
+    font-weight: normal; }
     form .form-item label {
       width: 100%;
       display: block;
-      margin-bottom: 10px; }
-    form .form-item input[type="text"] {
-      width: calc(100% - 20px);
-      height: 35px;
+      margin-bottom: 10px;
+      font-size: 16px; }
+    form .form-item textarea {
+      width: 96%;
+      height: 120px;
       border-radius: 6px;
       color: #ffffff;
-      padding: 0 10px; }
+      padding: 0 10px;
+      border: 1px solid #5f5f5f; }
+    form .form-item input[type="text"] {
+      width: 96%;
+      height: 35px;
+      border-radius: 6px;
+      color: #5f5f5f;
+      padding: 0 10px;
+      border: 1px solid #5f5f5f; }
       form .form-item input[type="text"].black {
         width: calc(100% - 70px);
         background: #5f5f5f;
         color: #ffffff;
-        border: 1px solid #5f5f5f; }
-      form .form-item input[type="text"]::placeholder {
+        border: 1px solid #5f5f5f;
         color: #ffffff; }
+        form .form-item input[type="text"].black::placeholder {
+          color: #ffffff; }
+      form .form-item input[type="text"]::placeholder {
+        color: #5f5f5f; }
     form .form-item input[type="image"] {
       margin: 0 0 -10px 10px;
       float: right; }
+    form .form-item.medium {
+      width: 46%;
+      float: left; }
+    form .form-item.action-right {
+      margin-left: 6%; }
+    form .form-item.actions .block-left {
+      width: calc(100% - 130px);
+      float: left; }
+    form .form-item.actions .settings {
+      width: 100px;
+      float: left;
+      margin-top: 30px;
+      overflow: hidden;
+      text-align: center; }
+      form .form-item.actions .settings div {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        border: 1px solid #5f5f5f;
+        color: #5f5f5f;
+        background: #ffffff;
+        float: left;
+        border-radius: 4px; }
+        form .form-item.actions .settings div:last-child {
+          margin-left: 20px; }
+
+p.title {
+  width: 98%;
+  font-size: 18px;
+  color: #5f5f5f;
+  border-bottom: 1px solid #5f5f5f;
+  margin: 40px 0 30px 0;
+  padding-bottom: 10px; }
 
 .clear {
   clear: both; }
@@ -119,6 +213,11 @@ button {
   color: #5f5f5f;
   font-weight: bold;
   border-radius: 4px; }
+  button.cadastrar {
+    background: #26dcf2;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #26dcf2; }
 
 button.white {
   border: 1px solid #5f5f5f;
