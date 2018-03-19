@@ -3,11 +3,11 @@ $('document').ready( function() {
         ev.preventDefault();
         let element = ev.target;
         $(element).find('.validar').find('input, textarea').each((n, el) => {
-            console.log($(el).parent());
+            console.log($(el).closest(".form-item"));
             if( $.trim($(el).val()) === ""){
-                $(el).parent().addClass('error');
+                $(el).closest(".form-item").addClass('error');
             }else{
-                $(el).parent().removeClass('error');
+                $(el).closest(".form-item").removeClass('error');
             }
         });
 
