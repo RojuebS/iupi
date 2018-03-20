@@ -16,6 +16,31 @@ body {
     width: 1280px;
     margin: 0 auto;
     position: relative;
+
+    #historico_publicacao {
+        .block {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #5e5e5e;
+            border-radius: 4px;
+            overflow: hidden;
+
+            figure {
+                width: 235px;
+                float: left;
+            }
+
+            ul {
+                width: calc(100% - 250px);
+                margin-left: 10px;
+
+                li {
+                    list-style: none;
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
 }
 
 header {
@@ -177,9 +202,10 @@ form {
         overflow: hidden;
         margin-bottom: 20px;
         font-weight: normal;
+        float: left;
 
         label {
-            width: 100%;
+            width: 96%;
             display: block;
             margin-bottom: 10px;
             font-size: 16px;
@@ -276,6 +302,27 @@ form {
                 border: 1px solid red;
             }
         }
+
+        &.date {
+            width: 20%;
+            float: left;
+
+            input[type="text"] {
+                width: 70%;
+            }
+        }
+
+        &.status {
+            width: 29%;
+
+            input[type="text"] {
+                width: 80%;
+
+                &.last {
+                    width: 92%;
+                }
+            }
+        }
     }
 }
 
@@ -326,4 +373,11 @@ button.red {
     background: #fe0000;
     color: #ffffff;
     border: 1px solid #fe0000
+}
+
+button.publicacao {
+    background: #ffb24e;
+    border: 1px solid #ffb24e;
+    color: #ffffff;
+    margin-bottom: 0;
 }

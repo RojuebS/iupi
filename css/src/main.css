@@ -13,6 +13,21 @@ body {
   width: 1280px;
   margin: 0 auto;
   position: relative; }
+  .center #historico_publicacao .block {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #5e5e5e;
+    border-radius: 4px;
+    overflow: hidden; }
+    .center #historico_publicacao .block figure {
+      width: 235px;
+      float: left; }
+    .center #historico_publicacao .block ul {
+      width: calc(100% - 250px);
+      margin-left: 10px; }
+      .center #historico_publicacao .block ul li {
+        list-style: none;
+        margin: 3px 0; }
 
 header {
   width: 100%;
@@ -129,9 +144,10 @@ form {
     width: 100%;
     overflow: hidden;
     margin-bottom: 20px;
-    font-weight: normal; }
+    font-weight: normal;
+    float: left; }
     form .form-item label {
-      width: 100%;
+      width: 96%;
       display: block;
       margin-bottom: 10px;
       font-size: 16px; }
@@ -195,6 +211,17 @@ form {
           margin-left: 20px; }
     form .form-item.error input, form .form-item.error textarea {
       border: 1px solid red; }
+    form .form-item.date {
+      width: 20%;
+      float: left; }
+      form .form-item.date input[type="text"] {
+        width: 70%; }
+    form .form-item.status {
+      width: 29%; }
+      form .form-item.status input[type="text"] {
+        width: 80%; }
+        form .form-item.status input[type="text"].last {
+          width: 92%; }
 
 p.title {
   width: 98%;
@@ -236,5 +263,11 @@ button.red {
   background: #fe0000;
   color: #ffffff;
   border: 1px solid #fe0000; }
+
+button.publicacao {
+  background: #ffb24e;
+  border: 1px solid #ffb24e;
+  color: #ffffff;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=main.css.map */

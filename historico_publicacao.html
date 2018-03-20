@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="all" href="css/src/main.css" />
+    <title>Interface de publicação</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,400,600,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<header>
+    <div class="center">
+        <div id="historico_publicacao">
+            <h2>Histórico de publicação</h2>
+            <div id="perfil">
+                <figure><img src="images/ico-perfil.png" alt=""></figure>
+                <div class="name">
+                    Zé<br> Ninguém
+                </div>
+            </div>
+
+            <p class="title">FILTROS</p>
+
+            <form>
+                <div class="form-item">
+                    <label for="produto">Produto</label>
+                    <input type="text" id="produto">
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="form-item date">
+                    <label for="data_inicio">Data de inicio</label>
+                    <input type="text" id="data_inicio">
+                </div>
+
+                <div class="form-item date">
+                    <label for="data_fim">Data fim</label>
+                    <input type="text" id="data_fim">
+                </div>
+
+                <div class="form-item status">
+                    <label for="destino">Destino</label>
+                    <input type="text" class="destino" id="destino">
+                </div>
+
+                <div class="form-item status">
+                    <label for="status">Status</label>
+                    <input type="text" class="last" id="status">
+                </div>
+
+                <div class="form-item status">
+                    <button class="publicacao">Filtrar</button>
+                </div>
+                <div class="clear"></div>
+
+                <p class="title"></p>
+            </form>
+
+            <div class="block">
+                <div class="info-block">
+                    <figure><img src="images/thumb-video.png"></figure>
+                    <ul>
+                        <li>Nome do produto: <span></span></li>
+                        <li>Título do episódio: <span></span></li>
+                        <li>N&#176; do episodio: <span></span></li>
+                        <li>Data de publicação: <span></span></li>
+                        <li>Hora da publicação: <span></span></li>
+                    </ul>
+
+                    <div class="clear"></div>
+
+                    <div class="settings">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+</body>
+</html>
