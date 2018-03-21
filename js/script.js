@@ -3,7 +3,6 @@ $('document').ready( function() {
         ev.preventDefault();
         let element = ev.target;
         $(element).find('.validar').find('input, textarea').each((n, el) => {
-            console.log($(el).closest(".form-item"));
             if( $.trim($(el).val()) === ""){
                 $(el).closest(".form-item").addClass('error');
             }else{
