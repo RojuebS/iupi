@@ -18,16 +18,62 @@ body {
     padding: 10px;
     border: 1px solid #5e5e5e;
     border-radius: 4px;
-    overflow: hidden; }
-    .center #historico_publicacao .block figure {
+    overflow: hidden;
+    position: relative;
+    margin: 40px 0; }
+    .center #historico_publicacao .block .status_publicacao {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-weight: bold; }
+      .center #historico_publicacao .block .status_publicacao.rascunho {
+        color: red; }
+      .center #historico_publicacao .block .status_publicacao.processo {
+        color: blue; }
+      .center #historico_publicacao .block .status_publicacao.publicado {
+        color: #000000; }
+    .center #historico_publicacao .block .info-block .block-left {
       width: 235px;
       float: left; }
-    .center #historico_publicacao .block ul {
-      width: calc(100% - 250px);
-      margin-left: 10px; }
-      .center #historico_publicacao .block ul li {
+      .center #historico_publicacao .block .info-block .block-left .fullscreen {
+        margin-top: 10px; }
+    .center #historico_publicacao .block .info-block .block-right {
+      width: calc(100% - 270px);
+      margin: 0 10px;
+      float: left; }
+      .center #historico_publicacao .block .info-block .block-right ul li {
         list-style: none;
-        margin: 3px 0; }
+        margin: 0;
+        font-weight: bold;
+        color: #5e5e5e; }
+      .center #historico_publicacao .block .info-block .block-right .buttons {
+        margin-top: 25px; }
+        .center #historico_publicacao .block .info-block .block-right .buttons .white {
+          margin-left: 50px; }
+  .center #historico_publicacao #paginacao {
+    width: 96%;
+    margin-bottom: 60px;
+    overflow: hidden; }
+    .center #historico_publicacao #paginacao a.prev {
+      width: 15%;
+      float: left;
+      color: #5e5e5e;
+      font-weight: bold; }
+    .center #historico_publicacao #paginacao ul {
+      float: left;
+      text-align: center;
+      width: 60%; }
+      .center #historico_publicacao #paginacao ul li {
+        list-style: none;
+        display: inline-block; }
+        .center #historico_publicacao #paginacao ul li a {
+          color: #5e5e5e;
+          margin-left: 15px;
+          font-weight: bold; }
+    .center #historico_publicacao #paginacao a.next {
+      width: 15%;
+      float: right;
+      color: #5e5e5e; }
 
 header {
   width: 100%;
@@ -245,10 +291,12 @@ p.title {
   cursor: pointer; }
 
 button {
-  padding: 10px 30px;
+  padding: 5px 30px;
   color: #5f5f5f;
   font-weight: bold;
-  border-radius: 4px; }
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 1px; }
   button.cadastrar {
     background: #26dcf2;
     color: #ffffff;
@@ -256,8 +304,9 @@ button {
     border: 1px solid #26dcf2; }
 
 button.white {
-  border: 1px solid #5f5f5f;
-  background: #ffffff; }
+  border: 1px solid #5e5e5e;
+  background: #ffffff;
+  color: #5e5e5e; }
 
 button.red {
   background: #fe0000;
