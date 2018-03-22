@@ -104,7 +104,6 @@ body {
       margin: 0 0 10px 40px; }
     .center #formulario_publicacao .block-right .capa {
       width: calc(96% - 42px);
-      height: 250px;
       overflow: hidden;
       border: 1px solid #5e5e5e;
       border-radius: 6px;
@@ -132,6 +131,8 @@ body {
           margin-right: 30px; }
   .center #formulario_publicacao #buttons .white {
     margin-left: 50px; }
+  .center form .form-item {
+    margin-bottom: 15px; }
 
 header {
   width: 100%;

@@ -176,7 +176,6 @@ body {
 
             .capa {
                 width: calc(96% - 42px);
-                height: 250px;
                 overflow: hidden;
                 border: 1px solid #5e5e5e;
                 border-radius: 6px;
@@ -224,6 +223,12 @@ body {
             .white {
                 margin-left: 50px;
             }
+        }
+    }
+
+    form {
+        .form-item {
+            margin-bottom: 15px;
         }
     }
 }
