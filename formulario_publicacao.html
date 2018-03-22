@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" media="all" href="css/src/main.css" />
+    <title>Interface de publicação</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,700italic,400,600,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<header>
+    <div class="center">
+        <h2>Formulário de publicação</h2>
+        <div id="perfil">
+            <figure><img src="images/ico-perfil.png" alt=""></figure>
+            <div class="name">
+                Zé<br> Ninguém
+            </div>
+        </div>
+
+        <form>
+            <div id="formulario_publicacao">
+                <h3 class="destino">Destino*</h3>
+                <ul>
+                    <li><img src="images/icos/globo.png" alt=""></li>
+                    <li><img src="images/icos/sky.png" alt=""></li>
+                    <li><img src="images/icos/now.png" alt=""></li>
+                    <li><img src="images/icos/globo.png" alt=""></li>
+                    <li><img src="images/icos/sky.png" alt=""></li>
+                    <li><img src="images/icos/now.png" alt=""></li>
+                </ul>
+
+                <h3 class="destino">Produto*</h3>
+
+                <div class="form-item">
+                    <select name="">
+                        <option value="">Deus Salve o Rei</option>
+                    </select>
+                </div>
+
+                <div class="block-left">
+
+                    <div class="form-item">
+                        <label for="midia_video">Mídia / Vídeo</label>
+                        <select name="midia_video" id="midia_video"></select>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="titulo_curto">Título curto</label>
+                        <input type="text" id="titulo_curto">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="titulo_episodio">Título Episódio*</label>
+                        <input type="text" id="titulo_episodio">
+                    </div>
+
+                    <div class="form-item medium_publicacao">
+                        <label for="num_episodio">N&#176; do episódio*</label>
+                        <input type="text" id="num_episodio">
+                    </div>
+
+                    <div class="form-item medium_publicacao">
+                        <label for="duracao" class="mgLeft">Duração*</label>
+                        <input type="text" id="duracao" class="mgLeft">
+                    </div>
+
+                    <div class="form-item medium_publicacao">
+                        <label for="data_inicio_licenca">Data de ínicio da licença*</label>
+                        <input type="text" id="data_inicio_licenca">
+                    </div>
+
+                    <div class="form-item medium_publicacao">
+                        <label for="data_fim_licenca" class="mgLeft">Data fim da licença</label>
+                        <input type="text" id="data_fim_licenca" class="mgLeft">
+                    </div>
+                </div>
+
+                <div class="block-right">
+                    <p class="title-capa">
+                        Capa
+                    </p>
+
+                    <div class="capa">
+                        <div class="container-capa">
+                            <img src="images/thumb-capa.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="formato">
+                        <ul>
+                            <li>Formato* </li>
+                            <li><input type="radio"> HD</li>
+                            <li><input type="radio"> SD</li>
+                            <li><button class="white">Carregar</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="form-item">
+                    <label>Sinopse do episódio</label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="form-item">
+                    <label for="obs">Obs</label>
+                    <input type="text" id="obs">
+                </div>
+
+                <div id="buttons">
+                    <button type="submit" class="publicacao">Salvar rascunho</button>
+                    <button type="submit" class="white">Salvar e publicar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</header>
+
+</body>
+</html>
